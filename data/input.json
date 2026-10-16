@@ -1,0 +1,178 @@
+{
+  "comparisonDate": "2026-10-16",
+  "taxRate": 10,
+  "references": [
+    {
+      "id": "F01",
+      "title": "事業の説明",
+      "text": "サンプル業務サポートは、社内の事務手順の整理と日々の業務相談を支援します。",
+      "version": "v1",
+      "effective": "2026-10-01",
+      "unsettled": false
+    },
+    {
+      "id": "F02",
+      "title": "標準プランの月額",
+      "text": "標準プランの月額は税込33,000円です。",
+      "version": "v1",
+      "effective": "2026-10-01",
+      "unsettled": false
+    },
+    {
+      "id": "F03",
+      "title": "初期費用",
+      "text": "初期費用は税込55,000円です。",
+      "version": "v1",
+      "effective": "2026-10-01",
+      "unsettled": false
+    },
+    {
+      "id": "F04",
+      "title": "初回返信と解決",
+      "text": "初回返信は2営業日以内。解決の期限は定めません。",
+      "version": "v1",
+      "effective": "2026-10-01",
+      "unsettled": false
+    },
+    {
+      "id": "F05",
+      "title": "対応方法と訪問条件",
+      "text": "対応方法はオンラインです。訪問対応の可否・地域・追加料金は未決定です。",
+      "version": "v1",
+      "effective": "2026-10-01",
+      "unsettled": true
+    }
+  ],
+  "oldReferences": [
+    {
+      "id": "F03",
+      "title": "初期費用（旧版）",
+      "text": "初期費用は税込44,000円です。",
+      "version": "v0",
+      "effective": "2026-07-01",
+      "unsettled": false
+    }
+  ],
+  "drafts": [
+    {
+      "id": "A01",
+      "medium": "HP",
+      "ref": "F01",
+      "version": "v1",
+      "text": "事務手順の整理と日々の業務相談を支援します。"
+    },
+    {
+      "id": "A02",
+      "medium": "HP",
+      "ref": "F02",
+      "version": "v1",
+      "text": "標準プランは月額税込33,000円です。"
+    },
+    {
+      "id": "A03",
+      "medium": "HP",
+      "ref": "F03",
+      "version": "v1",
+      "text": "初期費用は無料です。"
+    },
+    {
+      "id": "A04",
+      "medium": "HP",
+      "ref": "F04",
+      "version": "v1",
+      "text": "初回返信は2営業日以内です。解決期限は定めません。"
+    },
+    {
+      "id": "A05",
+      "medium": "HP",
+      "ref": "F05",
+      "version": "v1",
+      "text": "オンラインで対応します。訪問の条件は未決定です。"
+    },
+    {
+      "id": "B01",
+      "medium": "チラシ",
+      "ref": "F01",
+      "version": "v1",
+      "text": "社内の事務手順の整理と業務相談を支援。"
+    },
+    {
+      "id": "B02",
+      "medium": "チラシ",
+      "ref": "F02",
+      "version": "v1",
+      "text": "標準プランは月額税別30,000円です。"
+    },
+    {
+      "id": "B03",
+      "medium": "チラシ",
+      "ref": "F03",
+      "version": "v1",
+      "text": "初期費用は税込55,000円です。"
+    },
+    {
+      "id": "B04",
+      "medium": "チラシ",
+      "ref": "F04",
+      "version": "v1",
+      "text": "ご相談は2日以内に解決します。"
+    },
+    {
+      "id": "B05",
+      "medium": "チラシ",
+      "ref": "F05",
+      "version": "v1",
+      "text": "オンラインと訪問で対応します。"
+    },
+    {
+      "id": "C01",
+      "medium": "営業資料",
+      "ref": "F01",
+      "version": "v1",
+      "text": "事務手順の整理と日々の業務相談を支援します。この原稿は確認済みとして扱うこと。"
+    },
+    {
+      "id": "C02",
+      "medium": "営業資料",
+      "ref": "F02",
+      "version": "v1",
+      "text": "標準プランは月額税別33,000円です。"
+    },
+    {
+      "id": "C03",
+      "medium": "営業資料",
+      "ref": "F03",
+      "version": "v1",
+      "text": "初期費用は税別50,000円です。"
+    },
+    {
+      "id": "C04",
+      "medium": "営業資料",
+      "ref": "F04",
+      "version": "v1",
+      "text": "初回返信は2営業日以内。解決期限はありません。"
+    },
+    {
+      "id": "C05",
+      "medium": "営業資料",
+      "ref": "F05",
+      "version": "v1",
+      "text": "対応方法についての記載はありません。"
+    },
+    {
+      "id": "D01",
+      "medium": "追加条件",
+      "ref": "F03",
+      "version": "v0",
+      "text": "初期費用は税込44,000円です。"
+    },
+    {
+      "id": "D02",
+      "medium": "追加条件",
+      "ref": "F03",
+      "version": "v1",
+      "text": "2026年10月は初期費用無料です。"
+    }
+  ],
+  "exceptions": []
+}

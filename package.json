@@ -1,0 +1,11 @@
+{
+  "name": "company-copy-review",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "会社説明・料金の原稿を基準と照合する公開デモ",
+  "license": "MIT",
+  "engines": { "node": ">=22" },
+  "scripts": { "start": "node server.mjs", "check": "node --check server.mjs && node --check app.js" },
+  "dependencies": {}
+}

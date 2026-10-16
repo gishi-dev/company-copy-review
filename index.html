@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="ja">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>サンプル業務サポート｜原稿の照合</title><link rel="stylesheet" href="/style.css"><script type="module" src="/app.js"></script></head>
+<body>
+<header><span class="eyebrow">架空データの公開デモ / COMPANY COPY REVIEW</span><h1>会社説明・料金を、基準に戻って確かめる</h1><p>サンプル業務サポート　<span class="tag">初期基準 v1</span>　HP・チラシ・営業資料の原稿を項目ごとに確認</p></header>
+<main>
+<div class="notice"><strong id="mode">実演モード：保存済みのAI候補を再生しています。</strong>その場でAIを呼んでいません。入力を変えてもAIは再処理しません。<br>会社・データ・金額・税率・返信条件はすべて比較用の架空の設定です。「採用」は画面上の記録で、原稿への反映や掲載の承認ではありません。</div>
+<div id="stats" class="stats"></div>
+<nav><button id="reviewTab" class="primary">項目の照合</button><button id="reportTab">確認票・履歴</button><button id="inputTab">基準・原稿の追加と編集</button><button id="aiTab">生成AI用のコピー・候補の貼り付け</button></nav>
+<div id="message" role="status" aria-live="polite"></div>
+<section id="review"><div class="workspace"><aside><h2>確認する項目</h2><label>表示する内容<select id="filter"><option value="all">すべて（基本15＋追加2）</option><option value="fees">初期費用・版・例外</option><option value="tax">税込・税別</option><option value="promise">初回返信と解決</option><option value="questions">責任者に聞くこと</option></select></label><div id="items"></div></aside><article id="detail"></article></div></section>
+<section id="report" hidden><h2>人の確認票</h2><p>未決定・不記載は、誤りとは別に「責任者に聞くこと」として残します。</p><button id="download" class="primary">確認票と履歴をJSONで書き出す</button><button id="copyReport">確認票と履歴のJSONをコピー</button><label><input id="onlyDecided" type="checkbox"> 判断を記録した項目だけ表示（書き出しは全件）</label><div id="reportTable"></div><h2>判断・変更の履歴</h2><div id="history"></div><details><summary>書き出すJSONのプレビュー</summary><pre id="preview"></pre></details></section>
+<section id="inputs" hidden><h2>基準・原稿の追加と編集</h2><p>架空データのみ入力してください。JSONの references（現行基準）、oldReferences（旧版）、drafts（原稿）に行を追加・編集できます。元番号は重複させず、refには現行の基準番号を指定します。保存すると影響する項目を保留に戻し、閲覧記録を解除します。</p><p>unsettled は未決定事項、version は基準の版、effective は有効日です。exceptions の承認記録は架空の役割名と期間を持ちます。承認記録を追加しても人の判断は自動で採用されません。</p><label>入力データ（JSON）<textarea id="inputJson" rows="22" spellcheck="false"></textarea></label><button id="saveInput" class="primary">入力を保存</button></section>
+<section id="ai" hidden><h2>任意の生成AIで候補を作る</h2><p>この画面は外部へ送信しません。指示と架空データをコピーし、自分で選ぶ生成AIで処理できます。出力のinputは入力の写しです。全項目の候補が必要です。形式の見本には現在の候補を表示しています。</p><label>基準・原稿・指示<textarea id="prompt" rows="12" readonly></textarea></label><button id="copy">表示した内容をコピー</button><label>AI出力（JSON）<textarea id="importJson" rows="12" spellcheck="false"></textarea></label><button id="importAi" class="primary">候補を検証して取り込む</button></section>
+<footer>AI：意味・条件の比較候補　／　コード：番号・換算・版・状態・履歴　／　人：基準・例外・未決定事項・掲載の判断<br>税務・表示の法令への適合は判定しません。精度・見逃し率・作業時間の短縮は測定していません。</footer>
+</main></body></html>
